@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background: #e5e5e5;
+  font-family: 'Roboto', sans-serif;
+}
+.descuentos {
+  background: #d1891c;
+  height: 30px;
+  padding: 5px 47px;
+  width: 100%;
+}
+header {
+  background: #00669f;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+  height: 60px;
+  padding: 18px 47px;
+  width: 100%;
+}
+header h1 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.container {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+  border-radius: 25px 25px 0px 0px;
+  width: 20%;
+  height: 600px;
+  background: #f3f3f3;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+  position: relative;
+}
+.fondo {
+  width: 100%;
+}
+.corazon {
+  position: relative;
+  bottom: 300px;
+  left: 20px;
+}
+.foto-redonda {
+  position: relative;
+  bottom: 100px;
+  left: 40px;
+  width: 50%;
+}
+.card-body {
+  text-align: center;
+  margin-top: -40px;
+}
+
+.card-body p {
+  position: relative;
+  text-align: left;
+  margin: 17px;
+  bottom: 50px;
+}
+h2 {
+  position: relative;
+  bottom: 50px;
+}
+button {
+  background-color: #00669f;
+  padding: 10px;
+  color: white;
+  border: none;
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+  bottom: 80px;
+  border-radius: 2px;
+  font-size: 16px;
+  width: 128px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  background-color: #00669f;
+  height: 84px;
+  padding: 16px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+footer p {
+  color: white;
+  font-size: 10px;
+  padding-top: 17px;
+}
+footer img {
+  position: absolute;
+  bottom: 40px;
+  right: 8px;
+  width: 55px;
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
